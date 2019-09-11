@@ -62,6 +62,11 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtCMND = new System.Windows.Forms.TextBox();
+            this.txtNS = new System.Windows.Forms.TextBox();
+            this.txtGT = new System.Windows.Forms.TextBox();
+            this.txtHoTen = new System.Windows.Forms.TextBox();
+            this.txtMaBD = new System.Windows.Forms.TextBox();
             this.panelBanDoc.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -70,10 +75,14 @@
             // 
             // panelBanDoc
             // 
-            this.panelBanDoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panelBanDoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.panelBanDoc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelBanDoc.Controls.Add(this.txtSoDT);
             this.panelBanDoc.Controls.Add(this.label1);
+            this.panelBanDoc.Controls.Add(this.txtHoTen);
+            this.panelBanDoc.Controls.Add(this.txtGT);
+            this.panelBanDoc.Controls.Add(this.txtNS);
+            this.panelBanDoc.Controls.Add(this.txtCMND);
             this.panelBanDoc.Controls.Add(this.txtMaLop);
             this.panelBanDoc.Controls.Add(this.txtDiaChi);
             this.panelBanDoc.Controls.Add(this.txtEmail);
@@ -84,6 +93,7 @@
             this.panelBanDoc.Controls.Add(this.label3);
             this.panelBanDoc.Controls.Add(this.label2);
             this.panelBanDoc.Controls.Add(this.lblTen);
+            this.panelBanDoc.Controls.Add(this.txtMaBD);
             this.panelBanDoc.Controls.Add(this.lblMaBD);
             this.panelBanDoc.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelBanDoc.Location = new System.Drawing.Point(0, 0);
@@ -363,7 +373,7 @@
             // 
             // dgvSachDaMuon
             // 
-            this.dgvSachDaMuon.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dgvSachDaMuon.BackgroundColor = System.Drawing.Color.Salmon;
             this.dgvSachDaMuon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSachDaMuon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -374,7 +384,7 @@
             this.Column7,
             this.Column6});
             this.dgvSachDaMuon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvSachDaMuon.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dgvSachDaMuon.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.dgvSachDaMuon.Location = new System.Drawing.Point(4, 19);
             this.dgvSachDaMuon.Margin = new System.Windows.Forms.Padding(4);
             this.dgvSachDaMuon.Name = "dgvSachDaMuon";
@@ -438,6 +448,56 @@
             this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
             // 
+            // txtCMND
+            // 
+            this.txtCMND.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCMND.Location = new System.Drawing.Point(125, 305);
+            this.txtCMND.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCMND.Name = "txtCMND";
+            this.txtCMND.ReadOnly = true;
+            this.txtCMND.Size = new System.Drawing.Size(192, 26);
+            this.txtCMND.TabIndex = 12;
+            // 
+            // txtNS
+            // 
+            this.txtNS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNS.Location = new System.Drawing.Point(125, 245);
+            this.txtNS.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNS.Name = "txtNS";
+            this.txtNS.ReadOnly = true;
+            this.txtNS.Size = new System.Drawing.Size(192, 26);
+            this.txtNS.TabIndex = 13;
+            // 
+            // txtGT
+            // 
+            this.txtGT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGT.Location = new System.Drawing.Point(125, 185);
+            this.txtGT.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGT.Name = "txtGT";
+            this.txtGT.ReadOnly = true;
+            this.txtGT.Size = new System.Drawing.Size(192, 26);
+            this.txtGT.TabIndex = 14;
+            // 
+            // txtHoTen
+            // 
+            this.txtHoTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHoTen.Location = new System.Drawing.Point(125, 124);
+            this.txtHoTen.Margin = new System.Windows.Forms.Padding(4);
+            this.txtHoTen.Name = "txtHoTen";
+            this.txtHoTen.ReadOnly = true;
+            this.txtHoTen.Size = new System.Drawing.Size(192, 26);
+            this.txtHoTen.TabIndex = 15;
+            // 
+            // txtMaBD
+            // 
+            this.txtMaBD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaBD.Location = new System.Drawing.Point(79, 49);
+            this.txtMaBD.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaBD.Name = "txtMaBD";
+            this.txtMaBD.ReadOnly = true;
+            this.txtMaBD.Size = new System.Drawing.Size(187, 30);
+            this.txtMaBD.TabIndex = 1;
+            // 
             // TraSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -494,5 +554,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.TextBox txtHoTen;
+        private System.Windows.Forms.TextBox txtGT;
+        private System.Windows.Forms.TextBox txtNS;
+        private System.Windows.Forms.TextBox txtCMND;
+        private System.Windows.Forms.TextBox txtMaBD;
     }
 }
