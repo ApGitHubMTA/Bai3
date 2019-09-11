@@ -32,6 +32,9 @@
             this.txtMaBD = new System.Windows.Forms.TextBox();
             this.lblMaTL = new System.Windows.Forms.Label();
             this.txtMaTL = new System.Windows.Forms.TextBox();
+            this.btnMuon = new System.Windows.Forms.Button();
+            this.btnOK = new System.Windows.Forms.Button();
+            this.btnHuy = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblMaBD
@@ -68,11 +71,43 @@
             this.txtMaTL.Size = new System.Drawing.Size(173, 20);
             this.txtMaTL.TabIndex = 4;
             // 
+            // btnMuon
+            // 
+            this.btnMuon.Location = new System.Drawing.Point(297, 81);
+            this.btnMuon.Name = "btnMuon";
+            this.btnMuon.Size = new System.Drawing.Size(101, 31);
+            this.btnMuon.TabIndex = 5;
+            this.btnMuon.Text = "Mượn";
+            this.btnMuon.UseVisualStyleBackColor = true;
+            // 
+            // btnOK
+            // 
+            this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOK.Location = new System.Drawing.Point(315, 138);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(74, 50);
+            this.btnOK.TabIndex = 6;
+            this.btnOK.Text = "Hoàn Tất Mượn";
+            this.btnOK.UseVisualStyleBackColor = true;
+            // 
+            // btnHuy
+            // 
+            this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHuy.Location = new System.Drawing.Point(316, 194);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(73, 59);
+            this.btnHuy.TabIndex = 7;
+            this.btnHuy.Text = "Hủy";
+            this.btnHuy.UseVisualStyleBackColor = true;
+            // 
             // MuonSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(773, 261);
+            this.ClientSize = new System.Drawing.Size(755, 340);
+            this.Controls.Add(this.btnHuy);
+            this.Controls.Add(this.btnOK);
+            this.Controls.Add(this.btnMuon);
             this.Controls.Add(this.txtMaTL);
             this.Controls.Add(this.lblMaTL);
             this.Controls.Add(this.txtMaBD);
@@ -90,5 +125,8 @@
         private System.Windows.Forms.TextBox txtMaBD;
         private System.Windows.Forms.Label lblMaTL;
         private System.Windows.Forms.TextBox txtMaTL;
+        private System.Windows.Forms.Button btnMuon;
+        private System.Windows.Forms.Button btnOK;
+        private System.Windows.Forms.Button btnHuy;
     }
 }
