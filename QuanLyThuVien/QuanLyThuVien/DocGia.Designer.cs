@@ -32,6 +32,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtMa = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cbGT = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -74,11 +77,45 @@
             this.textBox1.Size = new System.Drawing.Size(236, 22);
             this.textBox1.TabIndex = 11;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(13, 95);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(78, 19);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Giới tính";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(8, 130);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(83, 19);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Ngày Sinh";
+            // 
+            // cbGT
+            // 
+            this.cbGT.FormattingEnabled = true;
+            this.cbGT.Location = new System.Drawing.Point(120, 95);
+            this.cbGT.Margin = new System.Windows.Forms.Padding(4);
+            this.cbGT.Name = "cbGT";
+            this.cbGT.Size = new System.Drawing.Size(236, 24);
+            this.cbGT.TabIndex = 18;
+            // 
             // DocGia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1081, 473);
+            this.Controls.Add(this.cbGT);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.txtMa);
             this.Controls.Add(this.label2);
@@ -96,5 +133,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtMa;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cbGT;
     }
 }
