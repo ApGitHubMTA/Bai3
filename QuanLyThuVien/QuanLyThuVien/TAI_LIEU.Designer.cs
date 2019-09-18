@@ -382,6 +382,7 @@
             this.groupBox1.Size = new System.Drawing.Size(1056, 194);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // txtNhanDe
             // 
@@ -480,6 +481,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "TAI_LIEU";
             this.Text = "TAI_LIEU";
+            this.Load += new System.EventHandler(this.TAI_LIEU_Load);
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTaiLieu)).EndInit();
             this.groupBox2.ResumeLayout(false);
