@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BangThuVien;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,9 @@ namespace QuanLyThuVien
 {
     public partial class TAI_LIEU : Form
     {
+        BUS_TaiLieu _tailieu = new BUS_TaiLieu();
+        int chon = 0;
+        TimKiem tk = new TimKiem();
         public TAI_LIEU()
         {
             InitializeComponent();
