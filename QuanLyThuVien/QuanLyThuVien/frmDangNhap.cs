@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace QuanLyThuVien
 {
-    public partial class TAILIEU : Form
+    public partial class frmDangNhap : Form
     {
-        public TAILIEU()
+        public frmDangNhap()
         {
             InitializeComponent();
         }
-
-        
     }
 }
