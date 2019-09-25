@@ -50,6 +50,8 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.cbTK = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -241,6 +243,7 @@
             this.btnThem.TabIndex = 30;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnSua
             // 
@@ -275,11 +278,40 @@
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
             // 
+            // btnXoa
+            // 
+            this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.Location = new System.Drawing.Point(1086, 54);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(92, 52);
+            this.btnXoa.TabIndex = 34;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            // 
+            // cbTK
+            // 
+            this.cbTK.FormattingEnabled = true;
+            this.cbTK.Items.AddRange(new object[] {
+            "Mã Bạn đọc",
+            "Họ tên",
+            "CMND",
+            "Mã lớp"});
+            this.cbTK.Location = new System.Drawing.Point(402, 221);
+            this.cbTK.Margin = new System.Windows.Forms.Padding(4);
+            this.cbTK.Name = "cbTK";
+            this.cbTK.Size = new System.Drawing.Size(181, 24);
+            this.cbTK.TabIndex = 36;
+            // 
             // DocGia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1081, 473);
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(1235, 473);
+            this.Controls.Add(this.cbTK);
+            this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.btnSua);
@@ -333,5 +365,7 @@
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnHuy;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.ComboBox cbTK;
     }
 }
