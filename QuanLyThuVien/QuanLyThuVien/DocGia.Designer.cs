@@ -52,6 +52,8 @@
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.cbTK = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -303,13 +305,35 @@
             this.cbTK.Size = new System.Drawing.Size(181, 24);
             this.cbTK.TabIndex = 36;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(234, 223);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(135, 22);
+            this.label10.TabIndex = 37;
+            this.label10.Text = "Tìm kiếm theo:";
+            // 
+            // txtTimKiem
+            // 
+            this.txtTimKiem.Location = new System.Drawing.Point(604, 221);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(257, 22);
+            this.txtTimKiem.TabIndex = 38;
+            // 
             // DocGia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1235, 473);
+            this.Controls.Add(this.txtTimKiem);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.cbTK);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnHuy);
@@ -367,5 +391,7 @@
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.ComboBox cbTK;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtTimKiem;
     }
 }
