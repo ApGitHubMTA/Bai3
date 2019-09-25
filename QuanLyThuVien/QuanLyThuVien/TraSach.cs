@@ -18,6 +18,7 @@ namespace QuanLyThuVien
     {
         BUS_BanDoc bd = new BUS_BanDoc();
         BUS_TaiLieu tl = new BUS_TaiLieu();
+        BUS_PhieuMuon pm = new BUS_PhieuMuon();
         public TraSach()
         {
             InitializeComponent();
@@ -91,7 +92,7 @@ namespace QuanLyThuVien
         }
         private void btnTra_Click(object sender, EventArgs e)
         {
-            //pm.UpdateTrangThaiPM_TraSach(txtMaTL.Text);
+            pm.UpdateTrangThaiPM_TraSach(txtMaTL.Text);
             if (tl.UodateSoLuongTLID_TraSach(txtMaTL.Text) == true)
             {
                 dgvSachDaMuon.DataSource = bd.ThongKeSachDaMuonTheoID(txtMaBD.Text);
