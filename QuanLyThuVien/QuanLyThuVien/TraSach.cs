@@ -57,7 +57,7 @@ namespace QuanLyThuVien
                 txtEmail.Text = dt.Rows[0]["Email"].ToString();
                 txtSoDT.Text = dt.Rows[0]["DienThoai"].ToString();
 
-                //dgvSachDaMuon.DataSource = bd.ThongKeSachDaMuonTheoID(txtMaBD.Text);
+                dgvSachDaMuon.DataSource = bd.ThongKeSachDaMuonTheoID(txtMaBD.Text);
             }
             con.Close();
         }
