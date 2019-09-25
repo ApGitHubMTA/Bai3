@@ -54,6 +54,8 @@
             this.cbTK = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -325,6 +327,15 @@
             this.txtTimKiem.Size = new System.Drawing.Size(257, 22);
             this.txtTimKiem.TabIndex = 38;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(-5, 279);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(1247, 202);
+            this.dataGridView1.TabIndex = 39;
+            // 
             // DocGia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -332,6 +343,7 @@
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1235, 473);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.cbTK);
@@ -360,6 +372,7 @@
             this.Controls.Add(this.label1);
             this.Name = "DocGia";
             this.Text = "DocGia";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -393,5 +406,6 @@
         private System.Windows.Forms.ComboBox cbTK;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtTimKiem;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
