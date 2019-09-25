@@ -21,5 +21,10 @@ namespace QuanLyThuVien
         {
 
         }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

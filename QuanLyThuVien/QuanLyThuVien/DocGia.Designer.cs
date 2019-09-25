@@ -50,6 +50,10 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.cbTK = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -241,6 +245,7 @@
             this.btnThem.TabIndex = 30;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnSua
             // 
@@ -275,11 +280,62 @@
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
             // 
+            // btnXoa
+            // 
+            this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.Location = new System.Drawing.Point(1086, 54);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(92, 52);
+            this.btnXoa.TabIndex = 34;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            // 
+            // cbTK
+            // 
+            this.cbTK.FormattingEnabled = true;
+            this.cbTK.Items.AddRange(new object[] {
+            "Mã Bạn đọc",
+            "Họ tên",
+            "CMND",
+            "Mã lớp"});
+            this.cbTK.Location = new System.Drawing.Point(402, 221);
+            this.cbTK.Margin = new System.Windows.Forms.Padding(4);
+            this.cbTK.Name = "cbTK";
+            this.cbTK.Size = new System.Drawing.Size(181, 24);
+            this.cbTK.TabIndex = 36;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(234, 223);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(135, 22);
+            this.label10.TabIndex = 37;
+            this.label10.Text = "Tìm kiếm theo:";
+            // 
+            // txtTimKiem
+            // 
+            this.txtTimKiem.Location = new System.Drawing.Point(604, 221);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(257, 22);
+            this.txtTimKiem.TabIndex = 38;
+            // 
             // DocGia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1081, 473);
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(1235, 473);
+            this.Controls.Add(this.txtTimKiem);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.cbTK);
+            this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.btnSua);
@@ -333,5 +389,9 @@
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnHuy;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.ComboBox cbTK;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtTimKiem;
     }
 }
