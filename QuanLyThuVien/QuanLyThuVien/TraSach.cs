@@ -16,6 +16,8 @@ namespace QuanLyThuVien
     
     public partial class TraSach : Form
     {
+        BUS_BanDoc bd = new BUS_BanDoc();
+        BUS_TaiLieu tl = new BUS_TaiLieu();
         public TraSach()
         {
             InitializeComponent();
@@ -86,6 +88,19 @@ namespace QuanLyThuVien
             }
             con.Close();
             TTBanDoc(txtMaTL.Text);
+        }
+        private void btnTra_Click(object sender, EventArgs e)
+        {
+            //pm.UpdateTrangThaiPM_TraSach(txtMaTL.Text);
+            if (tl.UodateSoLuongTLID_TraSach(txtMaTL.Text) == true)
+            {
+                dgvSachDaMuon.DataSource = bd.ThongKeSachDaMuonTheoID(txtMaBD.Text);
+                if (MessageBox.Show("Trả Sách Hoàn Tất. Bạn có muốn tiếp tục?", "Question", MessageBoxButtons.YesNo) == DialogResult.No)
+                    this.Close();
+            }
+            else
+                MessageBox.Show("Trả Sách Thất Bại.");
+
         }
 
 
