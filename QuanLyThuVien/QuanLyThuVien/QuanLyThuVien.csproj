@@ -71,6 +71,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLThuVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLThuVien.Designer.cs">
+      <DependentUpon>QLThuVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="TAI_LIEU.cs">
       <SubType>Form</SubType>
     </Compile>
