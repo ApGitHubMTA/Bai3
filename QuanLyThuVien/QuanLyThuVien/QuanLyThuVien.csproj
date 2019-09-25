@@ -110,6 +110,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="QLThuVien.resx">
+      <DependentUpon>QLThuVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TAI_LIEU.resx">
       <DependentUpon>TAI_LIEU.cs</DependentUpon>
     </EmbeddedResource>
