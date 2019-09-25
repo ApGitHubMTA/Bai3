@@ -42,7 +42,7 @@ namespace QuanLyThuVien
 
             SqlCommand cmd = new SqlCommand(str, con);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@MaSach", _MaSach);
+            //cmd.Parameters.Add("@MaSach", _MaSach);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
 
