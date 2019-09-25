@@ -72,7 +72,7 @@
             // 
             // txtMaBD
             // 
-            this.txtMaBD.Location = new System.Drawing.Point(169, 37);
+            this.txtMaBD.Location = new System.Drawing.Point(127, 150);
             this.txtMaBD.Name = "txtMaBD";
             this.txtMaBD.Size = new System.Drawing.Size(164, 20);
             this.txtMaBD.TabIndex = 2;
@@ -282,12 +282,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1005, 529);
             this.Controls.Add(this.dgvSachDaMuon);
+            this.Controls.Add(this.txtMaBD);
             this.Controls.Add(this.gbSachMuon);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnMuon);
             this.Controls.Add(this.txtMaTL);
             this.Controls.Add(this.lblMaTL);
-            this.Controls.Add(this.txtMaBD);
             this.Controls.Add(this.lblMaBD);
             this.Name = "MuonSach";
             this.Text = "MuonSach";
