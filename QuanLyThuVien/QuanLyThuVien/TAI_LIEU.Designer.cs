@@ -191,9 +191,9 @@
             // 
             this.groupBox3.Controls.Add(this.dgvTaiLieu);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox3.Location = new System.Drawing.Point(0, 242);
+            this.groupBox3.Location = new System.Drawing.Point(0, 283);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1056, 201);
+            this.groupBox3.Size = new System.Drawing.Size(1056, 218);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             // 
@@ -212,7 +212,7 @@
             this.dgvTaiLieu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvTaiLieu.Location = new System.Drawing.Point(3, 16);
             this.dgvTaiLieu.Name = "dgvTaiLieu";
-            this.dgvTaiLieu.Size = new System.Drawing.Size(1050, 182);
+            this.dgvTaiLieu.Size = new System.Drawing.Size(1050, 199);
             this.dgvTaiLieu.TabIndex = 0;
             // 
             // Column1
@@ -281,9 +281,9 @@
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox2.Location = new System.Drawing.Point(0, 194);
+            this.groupBox2.Location = new System.Drawing.Point(0, 225);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1056, 48);
+            this.groupBox2.Size = new System.Drawing.Size(1056, 58);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             // 
@@ -379,7 +379,7 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1056, 194);
+            this.groupBox1.Size = new System.Drawing.Size(1056, 225);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
@@ -475,7 +475,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1056, 443);
+            this.ClientSize = new System.Drawing.Size(1056, 501);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);

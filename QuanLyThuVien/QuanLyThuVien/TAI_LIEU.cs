@@ -68,7 +68,9 @@ namespace QuanLyThuVien
 
         private void btnHuy_Click(object sender, EventArgs e)
         {
-
+            chon = 0;
+            SetNull();
+            TAI_LIEU_Load(sender, e);
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -84,6 +86,21 @@ namespace QuanLyThuVien
         {
             txtDoMat.Text = cbMaNXB.Text = txtMaTL.Text = cbMaTheLoai.Text = txtNgonNgu.Text = txtNhanDe.Text = txtSoLuong.Text = txtTG.Text = "";
             txttk_MaTL.Text = txttk_NhanDe.Text = txttk_Tacgia.Text = "";
+        }
+        private void dgvNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                txtMaTL.Text = dgvTaiLieu.Rows[e.RowIndex].Cells[0].Value.ToString();
+                txtTG.Text = dgvTaiLieu.Rows[e.RowIndex].Cells[1].Value.ToString();
+                txtNhanDe.Text = dgvTaiLieu.Rows[e.RowIndex].Cells[2].Value.ToString();
+                txtSoLuong.Text = dgvTaiLieu.Rows[e.RowIndex].Cells[3].Value.ToString();
+                txtDoMat.Text = dgvTaiLieu.Rows[e.RowIndex].Cells[4].Value.ToString();
+                txtNgonNgu.Text = dgvTaiLieu.Rows[e.RowIndex].Cells[5].Value.ToString();
+                cbMaTheLoai.Text = dgvTaiLieu.Rows[e.RowIndex].Cells[6].Value.ToString();
+                cbMaNXB.Text = dgvTaiLieu.Rows[e.RowIndex].Cells[7].Value.ToString();
+            }
+            catch { }
         }
     }
 }
