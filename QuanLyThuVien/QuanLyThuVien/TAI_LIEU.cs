@@ -26,14 +26,27 @@ namespace QuanLyThuVien
 
         }
 
+        void MoDieuKhien()
+        {
+            txtTG.Enabled = txtNhanDe.Enabled = txtSoLuong.Enabled = txtNgonNgu.Enabled = cbMaTheLoai.Enabled = cbMaNXB.Enabled = txtDoMat.Enabled = true;
+            btnThem.Enabled = btnSua.Enabled = btnXoa.Enabled = false;
+            btnLuu.Enabled = true;
+        }
         private void btnSua_Click(object sender, EventArgs e)
         {
-
+            MoDieuKhien();
+            chon = 2;
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-
+            if (DialogResult.Yes == MessageBox.Show("Bạn muốn xóa Tài liệu này?", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            {
+                _tailieu.XoaTaiLieu(txtMaTL.Text);
+                MessageBox.Show("Xóa thành công!");
+                TAI_LIEU_Load(sender, e);
+                SetNull();
+            }
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
