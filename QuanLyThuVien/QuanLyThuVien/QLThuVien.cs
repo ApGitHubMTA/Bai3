@@ -50,7 +50,7 @@ namespace QuanLyThuVien
 
         private void trảTàiLiệuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmTraSach frm = new frmTraSach();
+            TraSach frm = new TraSach();
             frm.Show();
         }
     }

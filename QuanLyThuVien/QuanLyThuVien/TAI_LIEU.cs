@@ -13,16 +13,19 @@ namespace QuanLyThuVien
 {
     public partial class TAI_LIEU : Form
     {
-        BUS_TaiLieu _tailieu = new BUS_TaiLieu();
-        int chon = 0;
-        TimKiem tk = new TimKiem();
         public TAI_LIEU()
         {
             InitializeComponent();
         }
+        BUS_TaiLieu _tailieu = new BUS_TaiLieu();
+        int chon = 0;
+        TimKiem tk = new TimKiem();
 
-        private void btnThem_Click(object sender, EventArgs e)
+        void KhoaDieuKhien()
         {
+            txtTG.Enabled = txtNhanDe.Enabled = txtSoLuong.Enabled = txtNgonNgu.Enabled = cbMaTheLoai.Enabled = cbMaNXB.Enabled = txtDoMat.Enabled = false;
+            btnThem.Enabled = btnSua.Enabled = btnXoa.Enabled = true;
+            btnLuu.Enabled = false;
 
         }
 
@@ -32,19 +35,38 @@ namespace QuanLyThuVien
             btnThem.Enabled = btnSua.Enabled = btnXoa.Enabled = false;
             btnLuu.Enabled = true;
         }
+
+        void SetNull()
+        {
+            txtDoMat.Text = cbMaNXB.Text = txtMaTL.Text = cbMaTheLoai.Text = txtNgonNgu.Text = txtNhanDe.Text = txtSoLuong.Text = txtTG.Text = "";
+            txttk_MaTL.Text = txttk_NhanDe.Text = txttk_Tacgia.Text = "";
+        }
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            MoDieuKhien();
+            SetNull();
+            chon = 1;
+        }
+
         private void btnSua_Click(object sender, EventArgs e)
         {
             MoDieuKhien();
             chon = 2;
         }
-
+        private void frmTAILIEU_Load(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            dt = _tailieu.HienThiTaiLieu();
+            dgvTaiLieu.DataSource = dt;
+            KhoaDieuKhien();
+        }
         private void btnXoa_Click(object sender, EventArgs e)
         {
             if (DialogResult.Yes == MessageBox.Show("Bạn muốn xóa Tài liệu này?", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
             {
                 _tailieu.XoaTaiLieu(txtMaTL.Text);
                 MessageBox.Show("Xóa thành công!");
-                TAI_LIEU_Load(sender, e);
+                frmTAILIEU_Load(sender, e);
                 SetNull();
             }
         }
@@ -61,7 +83,7 @@ namespace QuanLyThuVien
                     _tailieu.ThemTaiLieu(txtTG.Text, txtNhanDe.Text, int.Parse(txtSoLuong.Text), int.Parse(txtDoMat.Text), txtNgonNgu.Text, cbMaTheLoai.Text, cbMaNXB.Text);
                     MessageBox.Show("Thêm thành công!");
                     SetNull();
-                    TAI_LIEU_Load(sender, e);
+                    frmTAILIEU_Load(sender, e);
                 }
             }
             else if (chon == 2)
@@ -74,32 +96,11 @@ namespace QuanLyThuVien
                     _tailieu.SuaTaiLieu(txtMaTL.Text, txtTG.Text, txtNhanDe.Text, int.Parse(txtSoLuong.Text), int.Parse(txtDoMat.Text), txtNgonNgu.Text, cbMaTheLoai.Text, cbMaNXB.Text);
                     MessageBox.Show("Sửa thành công!");
                     SetNull();
-                    TAI_LIEU_Load(sender, e);
+                    frmTAILIEU_Load(sender, e);
                 }
             }
         }
 
-        private void btnHuy_Click(object sender, EventArgs e)
-        {
-            chon = 0;
-            SetNull();
-            TAI_LIEU_Load(sender, e);
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TAI_LIEU_Load(object sender, EventArgs e)
-        {
-
-        }
-        void SetNull()
-        {
-            txtDoMat.Text = cbMaNXB.Text = txtMaTL.Text = cbMaTheLoai.Text = txtNgonNgu.Text = txtNhanDe.Text = txtSoLuong.Text = txtTG.Text = "";
-            txttk_MaTL.Text = txttk_NhanDe.Text = txttk_Tacgia.Text = "";
-        }
         private void dgvNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try
@@ -114,6 +115,156 @@ namespace QuanLyThuVien
                 cbMaNXB.Text = dgvTaiLieu.Rows[e.RowIndex].Cells[7].Value.ToString();
             }
             catch { }
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            chon = 0;
+            SetNull();
+            frmTAILIEU_Load(sender, e);
+        }
+
+        private void txttkMaTL_TextChanged(object sender, EventArgs e)
+        {
+            dgvTaiLieu.DataSource = tk.TKTL_MaTL(txttk_MaTL.Text);
+
+        }
+        private void txttkTacGia_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            dgvTaiLieu.DataSource = tk.TKTL_TacGia(txttk_Tacgia.Text);
+        }
+
+        private void txttkNhanDe_TextChanged(object sender, EventArgs e)
+        {
+            dgvTaiLieu.DataSource = tk.TKTL_NhanDe(txttk_NhanDe.Text);
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbMaTheLoai_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbMaNXB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvTaiLieu_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txtNgonNgu_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDoMat_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSoLuong_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTG_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNhanDe_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMaTL_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TAI_LIEU_Load(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            dt = _tailieu.HienThiTaiLieu();
+            dgvTaiLieu.DataSource = dt;
+            KhoaDieuKhien();
         }
     }
 }
