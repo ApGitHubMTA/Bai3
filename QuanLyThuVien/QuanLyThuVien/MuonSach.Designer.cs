@@ -55,12 +55,16 @@
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.gbSachMuon.SuspendLayout();
             this.gbBanDoc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSachDaMuon)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSachMuon)).BeginInit();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblMaBD
@@ -146,6 +150,7 @@
             // 
             // gbBanDoc
             // 
+            this.gbBanDoc.Controls.Add(this.groupBox3);
             this.gbBanDoc.Controls.Add(this.dgvSachDaMuon);
             this.gbBanDoc.Dock = System.Windows.Forms.DockStyle.Left;
             this.gbBanDoc.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -298,6 +303,38 @@
             this.Column14.HeaderText = "Mã NXB";
             this.Column14.Name = "Column14";
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.button1);
+            this.groupBox3.Controls.Add(this.button2);
+            this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(416, 59);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(114, 378);
+            this.groupBox3.TabIndex = 6;
+            this.groupBox3.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(16, 164);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(73, 59);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Hủy";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(16, 81);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(74, 50);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "Hoàn Tất Mượn";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // MuonSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -317,6 +354,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvSachDaMuon)).EndInit();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSachMuon)).EndInit();
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -351,5 +389,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

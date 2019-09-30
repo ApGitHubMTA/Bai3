@@ -80,36 +80,12 @@ namespace QuanLyThuVien
         }
         private void btnOK_Click(object sender, EventArgs e)
         {
-            string MaPM = "";
-            DataTable dt = new DataTable();
-            dt = pm.ThemPhieuMuon(txtMaBD.Text);
-            MaPM = dt.Rows[0]["MaPM"].ToString();
 
-            for (int i = 0; i < dgvSachMuon.Rows.Count; i++)
-            {
-                dt = tl.TimKiemMaSachTheoMaDauSach(dgvSachMuon.Rows[i].Cells[0].Value.ToString());
-                string MaSach = dt.Rows[0]["MaSach"].ToString();
-                bool b = ctpm.ThemCTPM(MaPM, MaSach, DateTime.Now, DateTime.Now.AddMonths(6), "");
-                if (b == false)
-                    MessageBox.Show("Thêm Thất Bại Cuốn :" + dgvSachMuon.Rows[i].Cells[0].Value.ToString());
-                tl.UodateSoLuongDauSachID(dgvSachMuon.Rows[i].Cells[0].Value.ToString());
-            }
-
-            if (MessageBox.Show("Mượn Thành công! Có Muốn kết thúc??", "Question", MessageBoxButtons.YesNo) == DialogResult.Yes)
-                this.Close();
-            else
-            {
-                dgvSachDaMuon.DataSource = bd.ThongKeSachDaMuonTheoID(txtMaBD.Text);
-            }
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
         {
-            txtMaBD.Text = txtMaTL.Text = "";
-            for (int i = 0; i < dgvSachDaMuon.Rows.Count; i++)
-                dgvSachDaMuon.Rows.RemoveAt(i);
-            for (int i = 0; i < dgvSachMuon.Rows.Count; i++)
-                dgvSachMuon.Rows.RemoveAt(i);
+
         }
 
         private void txtMaBD_TextChanged(object sender, EventArgs e)
