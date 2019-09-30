@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BangThuVien;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,7 +25,7 @@ namespace QuanLyThuVien
             {
                 // bool x = false;
                 MessageBox.Show("Bạn đăng nhập thành công ^^", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                frmQLThuVien frm1 = new frmQLThuVien();
+                QLThuVien frm1 = new QLThuVien();
                 frm1.Show();
                 Hide();
             }
@@ -39,9 +40,9 @@ namespace QuanLyThuVien
         private void frmDangNhap_Load(object sender, EventArgs e)
         {
             SetStyle(ControlStyles.ResizeRedraw, true);
-            timer1.Start();
-            timer2.Start();
-            timer3.Start();
+           // timer1.Start();
+            //timer2.Start();
+            //timer3.Start();
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
