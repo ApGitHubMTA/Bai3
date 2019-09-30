@@ -25,17 +25,17 @@ namespace QuanLyThuVien
         }
         private void btnMuon_Click(object sender, EventArgs e)
         {
-            if (txtMaBD.Text == null)
+            if (txtMaTL.Text == null)
                 MessageBox.Show("Chưa có mã bạn đọc!");
             else if (txtMaTL.Text == null)
                 MessageBox.Show("Chưa có mã tài liệu!");
-            else if (bd.TimKiemBDID(txtMaBD.Text).Rows.Count < 1)
+            else if (bd.TimKiemBDID(txtMaTL.Text).Rows.Count < 1)
                 MessageBox.Show("Mã Bạn Đọc Không Tồn Tại!");
             else if (tl.TimKiemSachID(txtMaTL.Text).Rows.Count < 1)
                 MessageBox.Show("Mã Tài Liệu Không Tồn Tại trong CSDL!");
             else
             {
-                dgvSachDaMuon.DataSource = bd.ThongKeSachDaMuonTheoID(txtMaBD.Text);
+                dgvSachDaMuon.DataSource = bd.ThongKeSachDaMuonTheoID(txtMaTL.Text);
                 DataTable dt = tl.TimKiemSoLuongDauSachID(txtMaTL.Text);
                 if (dt.Rows.Count > 0)
                 {
@@ -81,7 +81,7 @@ namespace QuanLyThuVien
 
         private void txtMaBD_TextChanged(object sender, EventArgs e)
         {
-            dgvSachDaMuon.DataSource = bd.ThongKeSachDaMuonTheoID(txtMaBD.Text);
+            dgvSachDaMuon.DataSource = bd.ThongKeSachDaMuonTheoID(txtMaTL.Text);
         }
     }
 }
