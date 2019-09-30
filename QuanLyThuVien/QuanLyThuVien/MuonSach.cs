@@ -78,15 +78,6 @@ namespace QuanLyThuVien
                 dgv.Rows[i].Cells[7].Value = listTLMuon[i].MaNXB.ToString();
             }
         }
-        private void btnOK_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnHuy_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void txtMaBD_TextChanged(object sender, EventArgs e)
         {
