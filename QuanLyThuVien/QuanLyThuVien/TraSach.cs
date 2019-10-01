@@ -106,6 +106,9 @@ namespace QuanLyThuVien
 
         }
 
+        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
+        }
     }
 }

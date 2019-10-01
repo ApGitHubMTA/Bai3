@@ -631,6 +631,7 @@
             // lblNhanDe
             // 
             this.lblNhanDe.AutoSize = true;
+            this.lblNhanDe.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.lblNhanDe.Location = new System.Drawing.Point(341, 23);
             this.lblNhanDe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNhanDe.Name = "lblNhanDe";
@@ -673,7 +674,7 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -691,6 +692,7 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(1023, 425);
             this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
