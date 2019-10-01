@@ -649,7 +649,7 @@
             // lblMaTL
             // 
             this.lblMaTL.AutoSize = true;
-            this.lblMaTL.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaTL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMaTL.Location = new System.Drawing.Point(24, 27);
             this.lblMaTL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMaTL.Name = "lblMaTL";
