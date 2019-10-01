@@ -219,6 +219,7 @@
             this.dgvSachMuon.RowHeadersWidth = 51;
             this.dgvSachMuon.Size = new System.Drawing.Size(653, 589);
             this.dgvSachMuon.TabIndex = 0;
+            this.dgvSachMuon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvSachMuon_CellContentClick);
             // 
             // Column7
             // 
