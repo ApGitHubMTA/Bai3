@@ -46,9 +46,18 @@
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvSachDaMuon = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2.SuspendLayout();
             this.gbSachMuon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSachMuon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSachDaMuon)).BeginInit();
             this.SuspendLayout();
             // 
             // lblMaBD
@@ -206,11 +215,73 @@
             this.Column14.HeaderText = "Mã NXB";
             this.Column14.Name = "Column14";
             // 
+            // dgvSachDaMuon
+            // 
+            this.dgvSachDaMuon.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dgvSachDaMuon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSachDaMuon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column15,
+            this.Column6});
+            this.dgvSachDaMuon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvSachDaMuon.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dgvSachDaMuon.Location = new System.Drawing.Point(0, 0);
+            this.dgvSachDaMuon.Name = "dgvSachDaMuon";
+            this.dgvSachDaMuon.Size = new System.Drawing.Size(258, 430);
+            this.dgvSachDaMuon.TabIndex = 8;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "MaDauSach";
+            this.Column1.HeaderText = "Mã Đầu Sách";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "NhanDe";
+            this.Column2.HeaderText = "Nhan Đề";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "TacGia";
+            this.Column3.HeaderText = "Tác Giả";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "NgayMuon";
+            this.Column4.HeaderText = "Ngày Mượn";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "NgayTra";
+            this.Column5.HeaderText = "Ngày Trả";
+            this.Column5.Name = "Column5";
+            // 
+            // Column15
+            // 
+            this.Column15.DataPropertyName = "HanTra";
+            this.Column15.HeaderText = "Hạn Trả";
+            this.Column15.Name = "Column15";
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "GhiChu";
+            this.Column6.HeaderText = "Ghi Chú";
+            this.Column6.Name = "Column6";
+            // 
             // MuonSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(754, 430);
+            this.Controls.Add(this.dgvSachDaMuon);
             this.Controls.Add(this.gbSachMuon);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnMuon);
@@ -223,6 +294,7 @@
             this.groupBox2.ResumeLayout(false);
             this.gbSachMuon.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSachMuon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSachDaMuon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,5 +320,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
+        private System.Windows.Forms.DataGridView dgvSachDaMuon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
     }
 }
