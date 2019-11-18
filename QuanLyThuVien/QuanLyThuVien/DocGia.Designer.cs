@@ -41,6 +41,9 @@
             this.txtCMND = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -175,11 +178,42 @@
             this.label7.TabIndex = 24;
             this.label7.Text = "Địa Chỉ";
             // 
+            // txtDiaChi
+            // 
+            this.txtDiaChi.Location = new System.Drawing.Point(492, 100);
+            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(236, 22);
+            this.txtDiaChi.TabIndex = 25;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(387, 136);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(90, 19);
+            this.label8.TabIndex = 26;
+            this.label8.Text = "Điện Thoại";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(492, 136);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(236, 22);
+            this.textBox3.TabIndex = 27;
+            // 
             // DocGia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1081, 473);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.txtDiaChi);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.txtCMND);
@@ -215,5 +249,8 @@
         private System.Windows.Forms.TextBox txtCMND;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtDiaChi;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }
