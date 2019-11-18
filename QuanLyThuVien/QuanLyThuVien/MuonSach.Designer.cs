@@ -33,8 +33,10 @@
             this.lblMaTL = new System.Windows.Forms.Label();
             this.txtMaTL = new System.Windows.Forms.TextBox();
             this.btnMuon = new System.Windows.Forms.Button();
-            this.btnOK = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnHuy = new System.Windows.Forms.Button();
+            this.btnOK = new System.Windows.Forms.Button();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblMaBD
@@ -80,33 +82,44 @@
             this.btnMuon.Text = "Mượn";
             this.btnMuon.UseVisualStyleBackColor = true;
             // 
-            // btnOK
+            // groupBox2
             // 
-            this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOK.Location = new System.Drawing.Point(315, 138);
-            this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(74, 50);
-            this.btnOK.TabIndex = 6;
-            this.btnOK.Text = "Hoàn Tất Mượn";
-            this.btnOK.UseVisualStyleBackColor = true;
+            this.groupBox2.Controls.Add(this.btnHuy);
+            this.groupBox2.Controls.Add(this.btnOK);
+            this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(297, 123);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(114, 232);
+            this.groupBox2.TabIndex = 6;
+            this.groupBox2.TabStop = false;
             // 
             // btnHuy
             // 
             this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHuy.Location = new System.Drawing.Point(316, 194);
+            this.btnHuy.Location = new System.Drawing.Point(16, 164);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(73, 59);
-            this.btnHuy.TabIndex = 7;
+            this.btnHuy.TabIndex = 1;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
+            // 
+            // btnOK
+            // 
+            this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOK.Location = new System.Drawing.Point(16, 81);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(74, 50);
+            this.btnOK.TabIndex = 0;
+            this.btnOK.Text = "Hoàn Tất Mượn";
+            this.btnOK.UseVisualStyleBackColor = true;
             // 
             // MuonSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(755, 340);
-            this.Controls.Add(this.btnHuy);
-            this.Controls.Add(this.btnOK);
+            this.ClientSize = new System.Drawing.Size(754, 430);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnMuon);
             this.Controls.Add(this.txtMaTL);
             this.Controls.Add(this.lblMaTL);
@@ -114,6 +127,7 @@
             this.Controls.Add(this.lblMaBD);
             this.Name = "MuonSach";
             this.Text = "MuonSach";
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,7 +140,8 @@
         private System.Windows.Forms.Label lblMaTL;
         private System.Windows.Forms.TextBox txtMaTL;
         private System.Windows.Forms.Button btnMuon;
-        private System.Windows.Forms.Button btnOK;
+        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnHuy;
+        private System.Windows.Forms.Button btnOK;
     }
 }
