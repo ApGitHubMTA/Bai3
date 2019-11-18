@@ -58,8 +58,19 @@
             this.lblNhanDe = new System.Windows.Forms.Label();
             this.txtMaTL = new System.Windows.Forms.TextBox();
             this.lblMaTL = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dgvSachDaMuon = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelBanDoc.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSachDaMuon)).BeginInit();
             this.SuspendLayout();
             // 
             // panelBanDoc
@@ -88,7 +99,7 @@
             this.panelBanDoc.Location = new System.Drawing.Point(0, 0);
             this.panelBanDoc.Margin = new System.Windows.Forms.Padding(4);
             this.panelBanDoc.Name = "panelBanDoc";
-            this.panelBanDoc.Size = new System.Drawing.Size(341, 450);
+            this.panelBanDoc.Size = new System.Drawing.Size(341, 571);
             this.panelBanDoc.TabIndex = 1;
             // 
             // txtSoDT
@@ -298,7 +309,7 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(459, 123);
+            this.groupBox2.Size = new System.Drawing.Size(1031, 123);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             // 
@@ -397,11 +408,102 @@
             this.lblMaTL.TabIndex = 10;
             this.lblMaTL.Text = "Nhập Mã Tài Liệu";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.dgvSachDaMuon);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox1.Location = new System.Drawing.Point(341, 123);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(1031, 448);
+            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Sách Đã Mượn";
+            // 
+            // dgvSachDaMuon
+            // 
+            this.dgvSachDaMuon.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dgvSachDaMuon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSachDaMuon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column7,
+            this.Column6});
+            this.dgvSachDaMuon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvSachDaMuon.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dgvSachDaMuon.Location = new System.Drawing.Point(4, 19);
+            this.dgvSachDaMuon.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvSachDaMuon.Name = "dgvSachDaMuon";
+            this.dgvSachDaMuon.RowHeadersWidth = 51;
+            this.dgvSachDaMuon.Size = new System.Drawing.Size(1023, 425);
+            this.dgvSachDaMuon.TabIndex = 1;
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column1.DataPropertyName = "MaDauSach";
+            this.Column1.HeaderText = "Mã TL";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column2.DataPropertyName = "NhanDe";
+            this.Column2.HeaderText = "Nhan Đề";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column3.DataPropertyName = "TacGia";
+            this.Column3.HeaderText = "Tác Giả";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column4.DataPropertyName = "NgayMuon";
+            this.Column4.HeaderText = "Ngày Mượn";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column5.DataPropertyName = "NgayTra";
+            this.Column5.HeaderText = "Ngày Trả";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            // 
+            // Column7
+            // 
+            this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column7.DataPropertyName = "HanTra";
+            this.Column7.HeaderText = "Hạn Trả";
+            this.Column7.MinimumWidth = 6;
+            this.Column7.Name = "Column7";
+            // 
+            // Column6
+            // 
+            this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column6.DataPropertyName = "GhiChu";
+            this.Column6.HeaderText = "Ghi Chú";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            // 
             // TraSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1372, 571);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.panelBanDoc);
             this.Name = "TraSach";
@@ -410,6 +512,8 @@
             this.panelBanDoc.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSachDaMuon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -446,5 +550,14 @@
         private System.Windows.Forms.Label lblNhanDe;
         private System.Windows.Forms.TextBox txtMaTL;
         private System.Windows.Forms.Label lblMaTL;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DataGridView dgvSachDaMuon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
     }
 }
