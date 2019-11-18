@@ -31,10 +31,6 @@
             this.panelBanDoc = new System.Windows.Forms.Panel();
             this.txtSoDT = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtHoTen = new System.Windows.Forms.TextBox();
-            this.txtGT = new System.Windows.Forms.TextBox();
-            this.txtNS = new System.Windows.Forms.TextBox();
-            this.txtCMND = new System.Windows.Forms.TextBox();
             this.txtMaLop = new System.Windows.Forms.TextBox();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -45,7 +41,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblTen = new System.Windows.Forms.Label();
-            this.txtMaBD = new System.Windows.Forms.TextBox();
             this.lblMaBD = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -79,10 +74,6 @@
             this.panelBanDoc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelBanDoc.Controls.Add(this.txtSoDT);
             this.panelBanDoc.Controls.Add(this.label1);
-            this.panelBanDoc.Controls.Add(this.txtHoTen);
-            this.panelBanDoc.Controls.Add(this.txtGT);
-            this.panelBanDoc.Controls.Add(this.txtNS);
-            this.panelBanDoc.Controls.Add(this.txtCMND);
             this.panelBanDoc.Controls.Add(this.txtMaLop);
             this.panelBanDoc.Controls.Add(this.txtDiaChi);
             this.panelBanDoc.Controls.Add(this.txtEmail);
@@ -93,7 +84,6 @@
             this.panelBanDoc.Controls.Add(this.label3);
             this.panelBanDoc.Controls.Add(this.label2);
             this.panelBanDoc.Controls.Add(this.lblTen);
-            this.panelBanDoc.Controls.Add(this.txtMaBD);
             this.panelBanDoc.Controls.Add(this.lblMaBD);
             this.panelBanDoc.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelBanDoc.Location = new System.Drawing.Point(0, 0);
@@ -122,46 +112,6 @@
             this.label1.Size = new System.Drawing.Size(57, 20);
             this.label1.TabIndex = 16;
             this.label1.Text = "Số DT";
-            // 
-            // txtHoTen
-            // 
-            this.txtHoTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHoTen.Location = new System.Drawing.Point(125, 124);
-            this.txtHoTen.Margin = new System.Windows.Forms.Padding(4);
-            this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.ReadOnly = true;
-            this.txtHoTen.Size = new System.Drawing.Size(192, 26);
-            this.txtHoTen.TabIndex = 15;
-            // 
-            // txtGT
-            // 
-            this.txtGT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGT.Location = new System.Drawing.Point(125, 185);
-            this.txtGT.Margin = new System.Windows.Forms.Padding(4);
-            this.txtGT.Name = "txtGT";
-            this.txtGT.ReadOnly = true;
-            this.txtGT.Size = new System.Drawing.Size(192, 26);
-            this.txtGT.TabIndex = 14;
-            // 
-            // txtNS
-            // 
-            this.txtNS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNS.Location = new System.Drawing.Point(125, 245);
-            this.txtNS.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNS.Name = "txtNS";
-            this.txtNS.ReadOnly = true;
-            this.txtNS.Size = new System.Drawing.Size(192, 26);
-            this.txtNS.TabIndex = 13;
-            // 
-            // txtCMND
-            // 
-            this.txtCMND.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCMND.Location = new System.Drawing.Point(125, 305);
-            this.txtCMND.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCMND.Name = "txtCMND";
-            this.txtCMND.ReadOnly = true;
-            this.txtCMND.Size = new System.Drawing.Size(192, 26);
-            this.txtCMND.TabIndex = 12;
             // 
             // txtMaLop
             // 
@@ -269,16 +219,6 @@
             this.lblTen.Size = new System.Drawing.Size(64, 20);
             this.lblTen.TabIndex = 2;
             this.lblTen.Text = "Họ Tên";
-            // 
-            // txtMaBD
-            // 
-            this.txtMaBD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaBD.Location = new System.Drawing.Point(79, 49);
-            this.txtMaBD.Margin = new System.Windows.Forms.Padding(4);
-            this.txtMaBD.Name = "txtMaBD";
-            this.txtMaBD.ReadOnly = true;
-            this.txtMaBD.Size = new System.Drawing.Size(187, 30);
-            this.txtMaBD.TabIndex = 1;
             // 
             // lblMaBD
             // 
@@ -523,10 +463,6 @@
         private System.Windows.Forms.Panel panelBanDoc;
         private System.Windows.Forms.TextBox txtSoDT;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtHoTen;
-        private System.Windows.Forms.TextBox txtGT;
-        private System.Windows.Forms.TextBox txtNS;
-        private System.Windows.Forms.TextBox txtCMND;
         private System.Windows.Forms.TextBox txtMaLop;
         private System.Windows.Forms.TextBox txtDiaChi;
         private System.Windows.Forms.TextBox txtEmail;
@@ -537,7 +473,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblTen;
-        private System.Windows.Forms.TextBox txtMaBD;
         private System.Windows.Forms.Label lblMaBD;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label8;
