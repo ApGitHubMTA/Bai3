@@ -64,7 +64,7 @@
             // 
             this.lblMaBD.AutoSize = true;
             this.lblMaBD.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaBD.Location = new System.Drawing.Point(28, 36);
+            this.lblMaBD.Location = new System.Drawing.Point(404, 110);
             this.lblMaBD.Name = "lblMaBD";
             this.lblMaBD.Size = new System.Drawing.Size(135, 19);
             this.lblMaBD.TabIndex = 1;
@@ -140,9 +140,9 @@
             this.gbSachMuon.Controls.Add(this.dgvSachMuon);
             this.gbSachMuon.Dock = System.Windows.Forms.DockStyle.Right;
             this.gbSachMuon.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbSachMuon.Location = new System.Drawing.Point(258, 0);
+            this.gbSachMuon.Location = new System.Drawing.Point(774, 0);
             this.gbSachMuon.Name = "gbSachMuon";
-            this.gbSachMuon.Size = new System.Drawing.Size(496, 430);
+            this.gbSachMuon.Size = new System.Drawing.Size(231, 529);
             this.gbSachMuon.TabIndex = 7;
             this.gbSachMuon.TabStop = false;
             this.gbSachMuon.Text = "Sách Vừa Nhập";
@@ -164,7 +164,7 @@
             this.dgvSachMuon.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvSachMuon.Location = new System.Drawing.Point(3, 22);
             this.dgvSachMuon.Name = "dgvSachMuon";
-            this.dgvSachMuon.Size = new System.Drawing.Size(490, 405);
+            this.dgvSachMuon.Size = new System.Drawing.Size(225, 504);
             this.dgvSachMuon.TabIndex = 0;
             // 
             // Column7
@@ -231,7 +231,7 @@
             this.dgvSachDaMuon.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dgvSachDaMuon.Location = new System.Drawing.Point(0, 0);
             this.dgvSachDaMuon.Name = "dgvSachDaMuon";
-            this.dgvSachDaMuon.Size = new System.Drawing.Size(258, 430);
+            this.dgvSachDaMuon.Size = new System.Drawing.Size(774, 529);
             this.dgvSachDaMuon.TabIndex = 8;
             // 
             // Column1
@@ -280,7 +280,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(754, 430);
+            this.ClientSize = new System.Drawing.Size(1005, 529);
             this.Controls.Add(this.dgvSachDaMuon);
             this.Controls.Add(this.gbSachMuon);
             this.Controls.Add(this.groupBox2);
