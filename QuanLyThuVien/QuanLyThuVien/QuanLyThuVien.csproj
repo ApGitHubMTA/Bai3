@@ -74,6 +74,9 @@
     <EmbeddedResource Include="DocGia.resx">
       <DependentUpon>DocGia.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MuonSach.resx">
+      <DependentUpon>MuonSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
